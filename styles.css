@@ -257,13 +257,21 @@ h2 {
 
 /*Tabla vuelos*/
 
-/*Tabla vuelos*/
-
 .flights-container {
 	position: fixed;
 	top: 150px;
 	right: 20px;
-	width: 270px; /* Ancho del contenedor */
+}
+
+.flights-label {
+	font-size: 12px;
+	color: #fff; /* Color blanco para el texto */
+	background-color: #4682b4; /* Color azul para la etiqueta */
+	padding: 5px 10px; /* Espacio entre el texto y el borde */
+	border-radius: 10px; /* Borde redondeado */
+	cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickable */
+	display: inline-block; /* Para que la etiqueta tenga un ancho y alto definidos */
+	position: relative; /* Posición relativa para que la tabla se posicione correctamente */
 }
 
 .flights-table {
@@ -274,13 +282,18 @@ h2 {
 	border-radius: 10px;
 	margin: 0 auto; /* Centra la tabla horizontalmente */
 	opacity: 0; /* La tabla es invisible al principio */
-	transform: translateX(100%); /* La tabla se oculta hacia la derecha */
+	transform: translateY(20px); /* La tabla se oculta hacia abajo */
 	transition: opacity 0.3s, transform 0.3s; /* Transición para el efecto de hover */
+	position: absolute; /* Posición absoluta para que se muestre sobre la etiqueta */
+	top: 100%; /* Posición vertical relativa a la etiqueta */
+	left: -195px; /* Posición horizontal relativa a la etiqueta */
+	transform: translateX(-50%); /* Centra la tabla horizontalmente */
+	width: 270px; /* Ancho de la tabla */
 }
 
-.flights-table:hover {
-	opacity: 1; /* La tabla se vuelve visible cuando se pasa el puntero */
-	transform: translateX(0); /* La tabla se desliza hacia la izquierda */
+.flights-label:hover + .flights-table {
+	opacity: 1; /* La tabla se vuelve visible cuando se pasa el puntero sobre la etiqueta */
+	transform: translateY(0); /* La tabla se desliza hacia arriba */
 }
 
 .flights-table table {
