@@ -24,103 +24,104 @@
 		</header>
 
 		<section id="home">
-			<div class="container">
-				<div class="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item" id="item-1">
-							<img
-								src="https://i.pinimg.com/originals/f9/ac/69/f9ac6942c12c0386c67ef6979d8b330c.jpg"
-								alt="Bariloche 1"
-								width="100%"
-								height="300px"
-								object-fit="cover"
-							/>
-						</div>
-						<div class="carousel-item" id="item-2">
-							<img
-								src="https://www.tripsavvy.com/thmb/5-vvsCLerjPpKzpzb6gf8dSqpgs=/2121x1414/filters:fill(auto,1)/GettyImages-622449006-3d9161af2c4047a2938e1ee4e14375aa.jpg"
-								alt="Bariloche 2"
-								width="100%"
-								height="300px"
-								object-fit="cover"
-							/>
-						</div>
-						<div class="carousel-item" id="item-3">
-							<img
-								src="https://hotelesen.net/wp-content/uploads/2019/04/images-74.jpeg"
-								alt="Bariloche 3"
-								width="100%"
-								height="300px"
-								object-fit="cover"
-							/>
-						</div>
-						<div class="carousel-item" id="item-4">
-							<img
-								src="https://whattodoargentina.com/files/1683137387_20191227-1577463012-tour_circuito_grande_desde_bariloche_tu_experiencia_1.jpg"
-								alt="Bariloche 4"
-								width="100%"
-								height="300px"
-								object-fit="cover"
-							/>
-						</div>
-						<div class="carousel-item" id="item-5">
-							<img
-								src="https://windows10spotlight.com/wp-content/uploads/2020/12/56779669366688a40d94fb42725e40a7.jpg"
-								alt="Bariloche 5"
-								width="100%"
-								height="300px"
-								object-fit="cover"
-							/>
-						</div>
+			<div class="slide">
+				<div class="slide-inner">
+					<input
+						class="slide-open"
+						type="radio"
+						id="slide-1"
+						name="slide"
+						aria-hidden="true"
+						hidden=""
+						checked="checked"
+					/>
+					<div class="slide-item">
+						<img
+							src="https://i.pinimg.com/originals/f9/ac/69/f9ac6942c12c0386c67ef6979d8b330c.jpg"
+						/>
 					</div>
-					<div class="carousel-nav">
-						<a href="#item-1">●</a>
-						<a href="#item-2">●</a>
-						<a href="#item-3">●</a>
-						<a href="#item-4">●</a>
-						<a href="#item-5">●</a>
+					<input
+						class="slide-open"
+						type="radio"
+						id="slide-2"
+						name="slide"
+						aria-hidden="true"
+						hidden=""
+					/>
+					<div class="slide-item">
+						<img
+							src="https://www.tripsavvy.com/thmb/5-vvsCLerjPpKzpzb6gf8dSqpgs=/2121x1414/filters:fill(auto,1)/GettyImages-622449006-3d9161af2c4047a2938e1ee4e14375aa.jpg"
+						/>
 					</div>
+					<input
+						class="slide-open"
+						type="radio"
+						id="slide-3"
+						name="slide"
+						aria-hidden="true"
+						hidden=""
+					/>
+					<div class="slide-item">
+						<img
+							src="https://images.trvl-media.com/media/content/shared/images/travelguides/Bariloche-6085464-desktopRetina.jpg"
+						/>
+					</div>
+					<label for="slide-3" class="slide-control prev control-1">‹</label>
+					<label for="slide-2" class="slide-control next control-1">›</label>
+					<label for="slide-1" class="slide-control prev control-2">‹</label>
+					<label for="slide-3" class="slide-control next control-2">›</label>
+					<label for="slide-2" class="slide-control prev control-3">‹</label>
+					<label for="slide-1" class="slide-control next control-3">›</label>
+					<ol class="slide-indicador">
+						<li>
+							<label for="slide-1" class="slide-circulo">•</label>
+						</li>
+						<li>
+							<label for="slide-2" class="slide-circulo">•</label>
+						</li>
+						<li>
+							<label for="slide-3" class="slide-circulo">•</label>
+						</li>
+					</ol>
 				</div>
-				<h2>¡Disfruta de Bariloche!</h2>
-				<p>
-					Explora las maravillas de Bariloche, un destino turístico de ensueño
-					en la Patagonia Argentina.
-				</p>
-				<a href="#lugares" class="btn">Descubre más</a>
+			</div>
 
-				<div class="flights-container">
-					<div class="flights-table">
-						<table>
-							<thead>
-								<tr>
-									<th>Aerolínea</th>
-									<th>Origen</th>
-									<th>Destino</th>
-									<th>Precio</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Aerolíneas Argentinas</td>
-									<td>Buenos Aires (AEP)</td>
-									<td>Bariloche (BRC)</td>
-									<td>$12.000</td>
-								</tr>
-								<tr>
-									<td>Latam Airlines</td>
-									<td>Santiago (SCL)</td>
-									<td>Bariloche (BRC)</td>
-									<td>$15.000</td>
-								</tr>
-								<tr>
-									<td>Andes Líneas Aéreas</td>
-									<td>Córdoba (COR)</td>
-									<td>Bariloche (BRC)</td>
-									<td>$18.000</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+			<div class="call-to-action">
+				<h2>¡Disfruta de Bariloche!</h2>
+				<a href="#lugares" class="btn">Descubre más</a>
+			</div>
+			<div class="flights-container">
+				<div class="flights-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Aerolínea</th>
+								<th>Origen</th>
+								<th>Destino</th>
+								<th>Precio</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Aerolíneas Argentinas</td>
+								<td>Buenos Aires (AEP)</td>
+								<td>Bariloche (BRC)</td>
+								<td>$12.000</td>
+							</tr>
+							<tr>
+								<td>Latam Airlines</td>
+								<td>Santiago (SCL)</td>
+								<td>Bariloche (BRC)</td>
+								<td>$15.000</td>
+							</tr>
+							<tr>
+								<td>Andes Líneas Aéreas</td>
+								<td>Córdoba (COR)</td>
+								<td>Bariloche (BRC)</td>
+								<td>$18.000</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</section>
@@ -174,7 +175,7 @@
 							src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/c3/37/83/gran-hotel-panamericano.jpg?w=1400&h=-1&s=1"
 							alt="Hotel Panamericano"
 						/>
-						<h3>Hotel Panoramic</h3>
+						<h3>Hotel Panamericano</h3>
 						<p>Un hotel moderno con habitaciones confortables.</p>
 					</div>
 					<div class="card">
