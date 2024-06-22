@@ -58,6 +58,14 @@ h2 {
 	border-radius: 5px;
 }
 
+.btn:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
 /* Tarjetas */
 
 .gallery {
@@ -255,6 +263,33 @@ h2 {
 	bottom: 30px; /* posición vertical ajustada */
 }
 
+/*Tabla autos*/
+
+.rental-cars {
+	margin: 20px auto;
+	width: 80%;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rental-cars table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.rental-cars th,
+.rental-cars td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+}
+
+.rental-cars th {
+	background-color: #f0f0f0;
+}
+
 /*Tabla vuelos*/
 
 .flights-container {
@@ -325,4 +360,37 @@ footer {
 
 #contact-form:target {
 	display: block;
+	padding-top: 15px;
+}
+/* Iconos redes sociales */
+
+.contenedor-redes {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.contenedor-redes a {
+	font-size: 30px;
+}
+
+.contenedor-redes a:hover {
+	color: white;
+	transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+}
+
+.facebook {
+	color: white;
+}
+
+.whatsapp {
+	color: white;
+}
+
+.instragram {
+	color: white;
 }
