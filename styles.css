@@ -257,6 +257,8 @@ h2 {
 
 /*Tabla vuelos*/
 
+/*Tabla vuelos*/
+
 .flights-container {
 	position: fixed;
 	top: 150px;
@@ -265,19 +267,20 @@ h2 {
 }
 
 .flights-table {
-	background-color: transparent; /* Cambiamos el fondo a transparente */
+	background-color: transparent; /* Fondo transparente */
 	border: 1px solid #4682b4;
 	padding: 19px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	margin: 0 auto; /* Centra la tabla horizontalmente */
-	opacity: 0.5; /* Agregamos opacidad para que sea semi-transparente */
-	transition: opacity 0.3s; /* Agregamos una transición para el efecto de hover */
+	opacity: 0; /* La tabla es invisible al principio */
+	transform: translateX(100%); /* La tabla se oculta hacia la derecha */
+	transition: opacity 0.3s, transform 0.3s; /* Transición para el efecto de hover */
 }
 
 .flights-table:hover {
-	opacity: 1; /* Cuando se pasa el puntero, la opacidad se vuelve 1 */
-	background-color: #87ceeb; /* Y se muestra el fondo azul */
+	opacity: 1; /* La tabla se vuelve visible cuando se pasa el puntero */
+	transform: translateX(0); /* La tabla se desliza hacia la izquierda */
 }
 
 .flights-table table {
